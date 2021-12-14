@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
           if(!mem_block)
             break;
 
-          CryptoPP::CRC32 cc;
+          CryptoPP::CRC32 crc;
           std::string digest;
 
           CryptoPP::StringSource ss((const CryptoPP::byte *) mem_block->data_ptr, mem_block->size, true,
